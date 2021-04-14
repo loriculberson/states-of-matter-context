@@ -1,7 +1,7 @@
 import Plasma from './Plasma'
 
-export default function Gas (){
+export default function Gas ({elements}){
   return (
-    <Plasma />
+    <Plasma elements={elements}/>
   )
 }

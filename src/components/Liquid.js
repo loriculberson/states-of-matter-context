@@ -1,7 +1,7 @@
 import Gas from './Gas'
 
-export default function Liquid (){
+export default function Liquid ({elements}){
   return (
-    <Gas />
+    <Gas elements={elements}/>
   )
 }

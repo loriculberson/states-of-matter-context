@@ -1,7 +1,7 @@
 import Liquid from './Liquid'
 
-export default function Solid (){
+export default function Solid ({elements}){
   return (
-    <Liquid />
+    <Liquid elements={elements}/>
   )
 }

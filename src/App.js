@@ -1,11 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
 import Solid from './components/Solid'
 
+
 function App() {
+  const [elements, setElements] = useState([
+    { id: 1, type: "plasma", name: "lightning"},
+    { id: 2, type: "plasma", name: "sun"},
+    { id: 3, type: "plasma", name: "stars"},
+]);
   return (
     <div className="App">
-      <Solid />
+      <Solid elements={elements}/>
     </div>
   );
 }
